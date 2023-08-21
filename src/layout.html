@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <script src="https://unpkg.com/htmx.org@1.9.4"></script>
+    <script src="src/js/main.js" type="module"></script>
+    <title>Bookishub.co - Your books simplified.</title>
+</head>
+<body>
+  <header>
+    <nav style="padding:0 2rem 0 2rem;">
+        <ul>
+            <li><strong>Bookis<span class="brand">hub<img src="src/svg/book.svg" /></span></strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#" role="button">Sign up for Beta</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main class="container">
+        <table role="grid">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Status</th>
+                <th scope="col">Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><a href="#">Changes</a></td>
+                <td><a>Butcher, Jim</a></td>
+                <td><mark>Read</mark> </td>
+                <td>
+                    <a>Dropdown</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><a href="#">Changes</a></td>
+                <td><a>Butcher, Jim</a></td>
+                <td><mark>TBR</mark></td>
+                <td>
+                    <a>Dropdown</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><a href="#">Changes</a></td>
+                <td><a>Butcher, Jim</a></td>
+                <td><mark>Acquired</mark></td>
+                <td>
+                    <a>Dropdown</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><a href="#">Changes</a></td>
+                <td><a>Butcher, Jim</a></td>
+                <td><mark>To buy</mark></td>
+                <td>
+                    <a>Dropdown</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        <footer>
+            <p>Bookishub &copy; 2023 - build with ❤️ by <a href="">Lance</a>. <a href="/support">Support</a> the site</p>
+        </footer>
+    </main>
+</body>
+</html>
