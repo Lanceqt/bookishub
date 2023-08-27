@@ -1,25 +1,29 @@
 {{define "layout"}}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <link rel="stylesheet" href="src/css/custom.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="src/css/custom.css" />
     <script src="https://unpkg.com/htmx.org@1.9.4"></script>
     <script src="src/js/main.js" type="module"></script>
     <title>Bookishub.co - Your books simplified. - {{template "title"}}</title>
-</head>
-<body>
-  <header>
-    {{template "menu"}}
-  </header>
+  </head>
+  <body>
+    <header>{{template "menu"}}</header>
     <main class="container">
-        {{template "body"}}
-        <footer>
-            <p>Bookishub &copy; 2023 - build with ❤️ by <a href="">Lance</a>. <a href="/support">Support</a> the site</p>
-        </footer>
+      {{template "body"}}
+      <footer>
+        <p>
+          Bookishub &copy; 2023 - build with ❤️ by <a href="">Lance</a>.
+          <a href="/support">Support</a> the site
+        </p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
 {{end}}
