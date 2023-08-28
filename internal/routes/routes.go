@@ -10,9 +10,9 @@ type Route struct {
 }
 
 var routes = []Route{
-	{URL: "/", Handler: indexHandler},
-	{URL: "/signup", Handler: signUpHandler},
-	{URL: "/app", Handler: appHandler},
+	{URL: "/", Handler: IndexHandler},
+	{URL: "/signup", Handler: SignUpHandler},
+	{URL: "/app", Handler: AppHandler},
 }
 
 func NewRouter(routes []Route) http.Handler {
@@ -21,13 +21,4 @@ func NewRouter(routes []Route) http.Handler {
         mux.HandleFunc(route.URL, route.Handler)
     }
     return mux
-}
-
-func indexHandler(w http.ResponseWriter, r *http.Request) {
-}
-
-func signUpHandler(w http.ResponseWriter, r *http.Request) {
-}
-
-func appHandler(w http.ResponseWriter, r *http.Request) {
 }
